@@ -1,0 +1,42 @@
+{
+    "name": "@nova-registry/json",
+    "version": "0.1.0-dev.1",
+    "description": "The API for dealing with NovaRegistry's json responses. It can also help with the configuration at a basic level.",
+    "license": "BSD-3-Clause",
+    "author": {
+        "name": "Nova Registry",
+        "email": "nr-contact@wettstein.qzz.io",
+        "url": "https://github.com/Nova-Registry"
+    },
+    "maintainers": [
+        {
+            "name": "Talon Wettstein",
+            "url": "https://github.com/Diablo2009"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nova-Registry/json.git"
+    },
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "devDependencies": {
+        "@types/node": "^24.3.0",
+        "@types/semver": "^7.7.0",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "@nova-registry/logger": "^0.1.0-dev.1",
+        "@nova-registry/types": "^0.1.0-dev.3",
+        "semver": "^7.7.2"
+    },
+    "bundleDependencies": [
+        "semver",
+        "@nova-registry/types",
+        "@nova-registry/logger"
+    ],
+    "scripts": {
+        "prepublishOnly": "tsc"
+    }
+}
